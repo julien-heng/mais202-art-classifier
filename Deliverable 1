@@ -1,0 +1,21 @@
+Deliverable Description
+1. Choice of dataset: Explain the reasons why you choose this dataset. If you are going to
+create your own custom dataset, explain what kind of data you will be scraping.
+
+
+2. Methodology: 
+The data set is very large (~30 GB) but one of our computers has a lot of storage and could therefore store the data and train the model. However, since the dataset is very large, we might need to get a virtual computer machine online where we could train our model in case it takes too much CPU power. Also we are thinking of normalizing the size of pictures.
+
+Our main goal is to be able to input a picture/art piece/painting and have our model predict the main genre/style of the art piece (we are only trying to predict 1 of the genres). From what we have seen on the internet, creating an art genre classifier would require Convolutional Neural Networks. However, we are considering using other models as we have not covered CNNs yet. The problem being we are unsure as to what parameters to use, since we would be analyzing images. The main pro of using CNNs is the ability to process pictures. As for the cons, from our understanding, CNNs require a lot of processing power to train and might have problems when images are rotated. 
+
+Evaluation Metric: 
+We are dealing with a classification problem, so one of the main evaluation metric will be a confusion matrix which shows the number of true positives, true negatives, false positives, and false negatives.
+
+Furthermore, you should be able to explain the specific problem’s accepted metrics. Keep track of the average baseline results which you hope to beat (For example, predict X with at least Y % accuracy).
+- 
+
+3. Application
+
+Our web application will feature a space where users can interact by providing input in the form of a picture. The picture can be taken by the user, or a photo sourced from the internet. Once uploaded, the system will analyze the artwork and provide users with a message to indicate the classification. Some example outputs include romanticism, contemporary, or medieval art. 
+This classification process enables users to gain insights into the style or genre of their submitted artwork. The output will be presented in an easily understandable text format, and we may include links that provide more information about the genre of artwork they are interested in. Our web application aims to offer a platform to enhance users’ appreciation and understanding of visual art.
+In accordance with time constraints, our web app may be expanded to include art of other forms, such as audio clips of music.
