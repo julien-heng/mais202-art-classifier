@@ -1,7 +1,7 @@
 Deliverable Description
 1. Choice of dataset: Explain the reasons why you choose this dataset. If you are going to
 create your own custom dataset, explain what kind of data you will be scraping.
-
+We will be using data from WikiArt which includes a large variety of paintings with the artist, date and genre. There are many datasets created from WikiArt. We will be using WikiArt Art Movements/Styles, which has 13 different directories of paintings sorted by genre, with each folder containing more than 1000 images. Since the paintings are grouped together based on their features, this dataset will be easy sufficient for training a classification model.  
 
 2. Methodology: 
 The data set is very large (~30 GB) but one of our computers has a lot of storage and could therefore store the data and train the model. However, since the dataset is very large, we might need to get a virtual computer machine online where we could train our model in case it takes too much CPU power. Also we are thinking of normalizing the size of pictures.
@@ -11,8 +11,7 @@ Our main goal is to be able to input a picture/art piece/painting and have our m
 Evaluation Metric: 
 We are dealing with a classification problem, so one of the main evaluation metric will be a confusion matrix which shows the number of true positives, true negatives, false positives, and false negatives.
 
-Furthermore, you should be able to explain the specific problem’s accepted metrics. Keep track of the average baseline results which you hope to beat (For example, predict X with at least Y % accuracy).
-- 
+Correct classification rate varies largely depending on the genre of the artwork. One classifier implemented with Fastai for a wide variety of genres have an accuracy of about 60%, while another classifier that dealt with abstract painting, landscape and portrait achieved 85%, 87% and 81% recognition rates in each category using EfficientNet-B3, respectively. The closer the time and location between two paintings the lower the recognition rate. We hope to acheive a recognition rate of 60% across sufficiently distinct clusters of art.
 
 3. Application
 
